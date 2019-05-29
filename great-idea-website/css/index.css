@@ -64,11 +64,9 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
-body{
-	display: grid;
-}
-header {
+.header {
 	position: relative;
+	width: 100%;
 }
 nav{
 	position: absolute;
@@ -86,11 +84,15 @@ nav a {
 	margin: 5px;
 }
 
-.section1 img {
-	display: inline-block;
+.section1 {
+	display: flex;
 }
-
-.section1 h2 {
-
-
+.section1 img {
+	postion: relative;
+	left: 600px;
+}
+.section1 button {
+	position: relative;
+	top: 100px;
+	height: 10px;
 }
