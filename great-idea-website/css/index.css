@@ -63,36 +63,346 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
-.header {
-	position: relative;
-	width: 100%;
-}
-nav{
-	position: absolute;
-	left: 30px;
-}
-.logo{
-	position: absolute;
-	right: 0;
-	top: 0;
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+  width: 880px;
+  /* TB LR */
+  margin: 0 auto;
 }
 
-nav a {
-	color: gray;
-	text-decoration: none;
-	margin: 5px;
+/* header */
+
+header nav {
+  display: inline-block;
+  width: 691px;
+  vertical-align: top;
+  margin-top: 35px;
 }
 
-.section1 {
+header nav a {
+  margin-right: 65px;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+header .logo {
+  margin-top: 25px;
+}
+
+/* cta */
+
+.cta .cta-text {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 77px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0px 75px;
+}
+
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta img {
+  display: inline-block;
+  margin-top: 69px;
+}
+
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
+}
+
+.main-content .top-content {
+  padding: 0 10px;
+}
+
+.main-content .top-content .text-content {
+  width: 410px;
+  display: inline-block;
+  margin-right: 34px;
+}
+
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.main-content .middle-img {
+  margin-top: 45px;
+}
+
+.main-content .bottom-content {
+  margin-top: 37px;
+  padding: 0 10px;
+}
+
+.main-content .bottom-content .text-content {
+  width: 275px;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.contact {
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
+}
+
+.contact p {
+  margin: 20px 0;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+//services page
+.test {
 	display: flex;
+	flex-wrap: row wrap;
 }
-.section1 img {
-	postion: relative;
-	left: 600px;
+.container-pic {
+	margin: 40px 0px 20px 0px;
 }
-.section1 button {
+
+.container-para1{
+	margin: 40px 0px 40px 0px;
+}
+
+.digi-container{
+	display: flex;
+	justify-content: space-around;
+	flex-flow: column;
+	border: 2px solid solid black;
+	height: 220px;
+	width: 400px;
+	background-color: #e7e7e7;
+	margin: 0;
+}
+
+.digi-container button {
 	position: relative;
-	top: 100px;
-	height: 10px;
+	bottom: 7px;
+	left: 20px;
+	height: 30px;
+	width: 140px;
+	border-radius: 10px;
+	font-size: 10px;
+	background-color: white;
+}
+
+.digi-container h4 {
+	position: relative;
+  margin: 0;
+	left: 20px;
+	top: 10px;
+}
+
+.digi-container p {
+	margin: 0px 15px 0px 15px;
+}
+
+.ux-container{
+	display: flex;
+	justify-content: space-around;
+	flex-flow: column;
+	border: 2px solid black;
+	height: 220px;
+	width: 400px;
+	background-color: #e7e7e7;
+}
+.ux-container button {
+	position: relative;
+	bottom: 7px;
+	left: 20px;
+	height: 30px;
+	width: 140px;
+	border-radius: 10px;
+	font-size: 10px;
+	background-color: white;
+}
+.ux-container h4 {
+	position: relative;
+  margin: 0;
+	left: 20px;
+	top: 10px;
+}
+
+.ux-container p {
+	margin: 0px 15px 0px 15px;
+}
+.mar-container{
+	display: flex;
+	justify-content: space-around;
+	flex-flow: column;
+	border: 2px solid black;
+	height: 220px;
+	width: 400px;
+	background-color: #e7e7e7;
+}
+.mar-container button {
+	position: relative;
+	bottom: 7px;
+	left: 20px;
+	height: 30px;
+	width: 140px;
+	border-radius: 10px;
+	font-size: 10px;
+	background-color: white;
+}
+.mar-container h4 {
+	position: relative;
+  margin: 0;
+	left: 20px;
+	top: 10px;
+}
+
+.mar-container p {
+	margin: 0px 15px 0px 15px;
+}
+.web-container{
+	display: flex;
+	justify-content: space-around;
+	flex-flow: column;
+	border: 2px solid black;
+	height: 220px;
+	width: 400px;
+	background-color: #e7e7e7;
+}
+.web-container button {
+	position: relative;
+	bottom: 7px;
+	left: 20px;
+	height: 30px;
+	width: 140px;
+	border-radius: 10px;
+	font-size: 10px;
+	background-color: white;
+}
+.web-container h4 {
+	position: relative;
+  margin: 0;
+	left: 20px;
+	top: 10px;
+}
+
+.web-container p {
+	margin: 0px 15px 0px 15px;
+}
+.ios-container{
+	display: flex;
+	justify-content: space-around;
+	flex-flow: column;
+	border: 2px solid black;
+	height: 220px;
+	width: 400px;
+	background-color: #e7e7e7;
+}
+.ios-container button {
+	position: relative;
+	bottom: 7px;
+	left: 20px;
+	height: 30px;
+	width: 140px;
+	border-radius: 10px;
+	font-size: 10px;
+	background-color: white;
+}
+.ios-container h4 {
+	position: relative;
+  margin: 0;
+	left: 20px;
+	top: 10px;
+}
+
+.ios-container p {
+	margin: 0px 15px 0px 15px;
+}
+.andro-container{
+	display: flex;
+	justify-content: space-around;
+	flex-flow: column;
+	border: 2px solid black;
+	height: 220px;
+	width: 400px;
+	background-color: #e7e7e7;
+}
+.andro-container button {
+	position: relative;
+	bottom: 7px;
+	left: 20px;
+	height: 30px;
+	width: 140px;
+	border-radius: 10px;
+	font-size: 10px;
+	background-color: white;
+}
+.andro-container h4 {
+	position: relative;
+  margin: 0;
+	left: 20px;
+	top: 10px;
+}
+
+.andro-container p {
+	margin: 0px 15px 0px 15px;
+}
+
+.abv-footer {
+	display: flex;
+	margin: 40px 0px 80px 0px;
+}
+
+.serv-container {
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.serv-container p {
+	position: relative;
+	bottom: 25px;
+  margin: 0px 60px 0px 0px;
+}
+
+ul {
+  list-style-type: square;
+}
+li {
+	list-style-position: inside;
+	position: relative;
+	bottom: 35px;
+	margin: 10px 0px;
 }
